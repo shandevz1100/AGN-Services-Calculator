@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AGN Services Calculator</title>
+    <style>
+        :root {
+            --primary: #107C41;
+            --primary-dark: #0A532B;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --bg-light: #F9FAFB;
+            --surface: #FFFFFF;
+            --border: #E5E7EB;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 820px;
+            margin: 40px auto;
+            background: var(--surface);
+            padding: 40px 48px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        .header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 0 0 8px 0;
+        }
+        .last-updated {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.35rem;
+            margin-top: 32px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: #ECFDF5;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .contact-box {
+            background: #F3F4F6;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last Updated: October 15, 2026 | App: <strong>AGN Services Calculator (AGN LandCalc)</strong></div>
+    </div>
+
+    <div class="highlight-box">
+        <strong>Overview:</strong> AGN Services Calculator is committed to protecting your privacy. This policy explains what information is processed when you use the app, how it is used, and how your data is protected.
+    </div>
+
+    <h2>1. Information We Collect and Process</h2>
+    <p>When you use <strong>AGN Services Calculator</strong>, we may process the following limited types of information:</p>
+    <ul>
+        <li><strong>Account Information:</strong> Username, professional designation/position, service center, and assigned administrative division(s) provided during login to identify your profile.</li>
+        <li><strong>Device Identifier:</strong> A randomly generated app-specific identifier and device model to ensure secure session authentication, prevent unauthorized account sharing, and bind login to your active device. We do NOT collect your device hardware IMEI, phone serial number, or phone number.</li>
+        <li><strong>Calculation and Work Data:</strong> Acreage tax records, hectare conversions, perches measurements, and KML coordinates that you compute and save. All calculation records are stored locally on your device within the app's private SQLite/Room database.</li>
+        <li><strong>Push Notification Tokens:</strong> Firebase Cloud Messaging (FCM) registration tokens to deliver administrative alerts, service notices, and in-app system updates.</li>
+    </ul>
+
+    <h2>2. Information We DO NOT Collect</h2>
+    <ul>
+        <li>We do <strong>NOT</strong> collect your precise or background GPS location.</li>
+        <li>We do <strong>NOT</strong> collect financial details, payment card numbers, or bank account information.</li>
+        <li>We do <strong>NOT</strong> access your personal contacts, phone call logs, camera, or microphone.</li>
+        <li>We do <strong>NOT</strong> track your web browsing activity or sell your data to advertising brokers.</li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>The information processed is used solely for the following operational purposes:</p>
+    <ul>
+        <li>To provide accurate land measurement and acreage tax calculations.</li>
+        <li>To manage and authenticate user login sessions and subscription validity.</li>
+        <li>To deliver relevant service notifications and updates.</li>
+        <li>To enable backup, import, and export of your saved records at your request.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>The app integrates trusted third-party services provided by Google for system reliability:</p>
+    <ul>
+        <li><strong>Google Firebase Cloud Messaging (FCM):</strong> Used to deliver push notifications and service announcements. For details, refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+        <li><strong>Google Firebase Remote Config:</strong> Used to update calculation rates and system configurations without requiring a full app reinstallation.</li>
+    </ul>
+
+    <h2>5. Data Storage and Security</h2>
+    <p>We implement robust industry-standard security measures:</p>
+    <ul>
+        <li>All network communications between the app and backend servers use encrypted HTTPS/TLS protocols.</li>
+        <li>Sensitive session tokens are stored using Android EncryptedSharedPreferences (Jetpack Security).</li>
+        <li>Your saved calculations are kept in local sandboxed storage accessible only by the app.</li>
+    </ul>
+
+    <h2>6. User Data Deletion and Account Removal</h2>
+    <p>You have full control over your personal data:</p>
+    <ul>
+        <li><strong>In-App Data Clearing:</strong> You can wipe all cached data and synced calculations anytime by navigating to <em>Settings &gt; Clear Synced Data</em>.</li>
+        <li><strong>Account Deletion Request:</strong> If you wish to delete your account, session records, and all associated information from our authentication servers, you can send a deletion request to:
+            <br><strong>Email:</strong> <a href="mailto:avpndeveloper606@gmail.com?subject=AGN%20Calculator%20Account%20Deletion%20Request">avpndeveloper606@gmail.com</a>
+            <br>Your request will be permanently processed within 7 business days.
+        </li>
+    </ul>
+
+    <h2>7. Children's Privacy</h2>
+    <p>AGN Services Calculator is intended strictly for agrarian officers, agricultural field staff, and professionals aged 18 and older. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>8. Disclaimer</h2>
+    <p>AGN Services Calculator is an independent calculation tool developed to assist field officers. It is not an official government application and does not represent any government agency or official department.</p>
+
+    <h2>9. Contact Us</h2>
+    <div class="contact-box">
+        If you have any questions or concerns regarding this Privacy Policy or data handling, please contact us at:
+        <br><br>
+        <strong>Developer:</strong> Harshana Devz<br>
+        <strong>Email:</strong> <a href="mailto:avpndeveloper606@gmail.com">avpndeveloper606@gmail.com</a><br>
+        <strong>Phone / WhatsApp:</strong> +94 74 148 2159<br>
+        <strong>Website:</strong> <a href="https://harshana-devz-portfolio.vercel.app" target="_blank" rel="noopener">https://harshana-devz-portfolio.vercel.app</a>
+    </div>
+</div>
+
+</body>
+</html>
